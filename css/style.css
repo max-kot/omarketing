@@ -168,6 +168,16 @@ body {
   position: relative;
   padding-bottom: 14px;
 }
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+  }
+}
 .title::after {
   content: "";
   position: absolute;
@@ -176,45 +186,6 @@ body {
   width: 60px;
   height: 4px;
   background: #fcbb08;
-}
-
-.btn {
-  background: #886239;
-  border-radius: 30px;
-  padding: 19px 55px;
-  color: #fff;
-  text-align: center;
-  border: 1px solid transparent;
-  transition: all 0.3s;
-}
-.btn:hover {
-  border-color: #886239;
-  background: #fff;
-  color: #1f1e1e;
-}
-
-.btn--small {
-  padding: 12px 31px;
-  font-size: 16px;
-}
-
-.link {
-  font-size: 16px;
-  line-height: 118.75%;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #c4c4c4;
-  transition: all 0.3s;
-}
-.link:hover {
-  color: #886239;
-}
-
-.link--white {
-  color: #fff;
-}
-.link--white:hover {
-  color: #c4c4c4;
 }
 
 /*--- Section Styles ---*/
@@ -415,7 +386,7 @@ body {
 }
 @media (max-width: 480px) {
   .first__title {
-    font-size: 35px;
+    font-size: 38px;
   }
 }
 .first__subtitle {
@@ -486,7 +457,7 @@ body {
   }
 }
 .about__title + * {
-  margin-left: 35px;
+  margin-left: 30px;
 }
 @media (max-width: 768px) {
   .about__title + * {
@@ -503,10 +474,185 @@ body {
   }
 }
 .about__text + * {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 @media (max-width: 768px) {
   .about__text + * {
     margin-top: 15px;
   }
+}
+
+.expertise {
+  padding: 143px 0 164px;
+}
+@media (max-width: 768px) {
+  .expertise {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 480px) {
+  .expertise {
+    padding: 25px 0;
+  }
+}
+.expertise__top + * {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .expertise__top + * {
+    margin-top: 25px;
+  }
+}
+.expertise__title + * {
+  margin-top: 89px;
+}
+@media (max-width: 768px) {
+  .expertise__title + * {
+    margin-top: 20px;
+  }
+}
+.expertise__box {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .expertise__box {
+    flex-direction: column;
+  }
+}
+.expertise__stats-list {
+  flex: 0 1 40%;
+}
+.expertise__stats-list + * {
+  margin-left: 30px;
+}
+@media (max-width: 768px) {
+  .expertise__stats-list + * {
+    margin-left: unset;
+  }
+}
+.expertise__item + * {
+  margin-top: 28px;
+}
+.expertise__progress {
+  position: relative;
+}
+.expertise__progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: #eaeaea;
+}
+.expertise__progress-line {
+  background: #000;
+  height: 2px;
+  position: relative;
+  z-index: 2;
+}
+.expertise__progress-line span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 181%;
+  letter-spacing: 1px;
+  color: #1d1d1d;
+}
+.expertise__name {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 181%;
+  letter-spacing: 1px;
+  color: #1d1d1d;
+  text-transform: uppercase;
+}
+.expertise__descr {
+  flex: 0 1 60%;
+  margin-top: -15px;
+}
+@media (max-width: 768px) {
+  .expertise__descr {
+    margin-top: 15px;
+  }
+}
+.expertise__text + * {
+  margin-top: 25px;
+}
+@media (max-width: 768px) {
+  .expertise__text + * {
+    margin-top: 15px;
+  }
+}
+.expertise__card-list {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .expertise__card-list {
+    flex-wrap: wrap;
+  }
+}
+.expertise__card-item {
+  flex: 0 1 33.333%;
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .expertise__card-item {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .expertise__card-item {
+    flex: 0 1 50%;
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 768px) {
+  .expertise__card-item {
+    flex: 0 1 100%;
+  }
+}
+.expertise__card-item + * {
+  margin-left: 30px;
+}
+@media (max-width: 768px) {
+  .expertise__card-item + * {
+    margin-left: unset;
+  }
+}
+.expertise__card-icon {
+  flex: 0 1 50px;
+}
+.expertise__card-icon + * {
+  margin-left: 38px;
+}
+@media (max-width: 1000px) {
+  .expertise__card-icon + * {
+    margin-left: unset;
+    margin-top: 25px;
+  }
+}
+.expertise__card-descr {
+  max-width: 0 1 285px;
+}
+.expertise__card-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 4.29px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.expertise__card-title + * {
+  margin-top: 14px;
+}
+.expertise__card-text {
+  color: #777;
 }
