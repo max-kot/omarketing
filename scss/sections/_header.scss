@@ -1,0 +1,145 @@
+.header {
+	position: relative; //!--- если забыть поставить то меню не скрывается за враппером
+	padding: 0 0 29px;
+	z-index: 55;
+	@media (max-width: 480px) {
+		padding-bottom: 15px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		@media (max-width: 480px) {
+			align-items: center;
+		}
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+		@media (max-width: 768px) {
+			position: absolute;
+			top: 93px;
+			right: -100%;
+			min-width: 320px;
+			height: calc(100vh - 93px);
+			overflow: auto;
+			background: rgba(255, 255, 255, 0.6);
+			backdrop-filter: blur(5px);
+			padding: 35px 0;
+			transition: right 0.3s;
+			@media (max-width: 480px) {
+				top: 79px;
+				height: calc(100vh - 78px);
+			}
+			&.active {
+				right: 0;
+			}
+		}
+	}
+}
+.logo {
+}
+.menu {
+	&__list {
+		display: flex;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		& + * {
+			margin-left: 38px;
+			@media (max-width: 768px) {
+				margin-left: unset;
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&__link {
+		padding: 0 6px 9px;
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.6px;
+		color: #373a39;
+		border-bottom: 2px solid transparent;
+		text-transform: uppercase;
+		transition: all 0.3s;
+		&:hover {
+			border-color: #fcbb08;
+			@media (max-width: 768px) {
+				border-color: transparent;
+				color: #fcbb08;
+			}
+		}
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+}
+.burger-btn {
+	display: none;
+	cursor: pointer;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	position: relative;
+	z-index: 55;
+	width: 40px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+	@media (max-width: 480px) {
+		padding-top: 15px;
+	}
+	&.active {
+		span {
+			background-color: transparent;
+			&::before {
+				transform: rotate(45deg);
+				top: 0;
+				transition: all 0.3s;
+			}
+			&::after {
+				transform: rotate(-45deg);
+				top: 0;
+				transition: all 0.3s;
+			}
+		}
+	}
+	span {
+		display: block;
+		position: relative;
+		width: 40px;
+		height: 3px;
+		background-color: #fcbb08;
+		&::before,
+		&::after {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 40px;
+			height: 3px;
+			background-color: #fcbb08;
+			transition: all 0.3s;
+		}
+		&::before {
+			left: 0;
+			top: 10px;
+		}
+		&::after {
+			left: 0;
+			top: -10px;
+		}
+	}
+}

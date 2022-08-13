@@ -1,0 +1,137 @@
+/*--- Base Styles ---*/
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 171%;
+	color: #373a39;
+	background: #fff;
+	@media (max-width: 480px) {
+		font-size: 1rem;
+	}
+}
+
+/*--- Utility ---*/
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	// делает элемент скрытым, но он по-прежнему на странице
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}
+.hidden {
+	opacity: 0;
+}
+
+/*--- Grid ---*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*--- Elements ---*/
+.no-scroll {
+	overflow: hidden;
+}
+.--ibg {
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.--vbg {
+	position: relative;
+	aspect-ratio: 16/9;
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 1.25;
+	letter-spacing: -1.65px;
+	color: #242121;
+	position: relative;
+	padding-bottom: 14px;
+	@media (max-width: 480px) {
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60px;
+		height: 4px;
+		background: #fcbb08;
+	}
+}
+.btn {
+	background: #886239;
+	border-radius: 30px;
+	padding: 19px 55px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid transparent;
+	transition: all 0.3s;
+	&:hover {
+		border-color: #886239;
+		background: #fff;
+		color: #1f1e1e;
+	}
+}
+.btn--small {
+	padding: 12px 31px;
+	font-size: 16px;
+}
+
+.link {
+	font-size: 16px;
+	line-height: calc(19px / 16px * 100%);
+	text-decoration-line: underline;
+	color: #c4c4c4;
+	transition: all 0.3s;
+	&:hover {
+		color: #886239;
+	}
+}
+.link--white {
+	color: #fff;
+	&:hover {
+		color: #c4c4c4;
+	}
+}
