@@ -20,7 +20,7 @@
 
 <body>
 	<!--WRAPPER-->
-	<div class="wrapper">
+	<ul class="wrapper">
 		<!-- HEADER -->
 		<header class="header">
 			<div class="container">
@@ -31,32 +31,32 @@
 					<nav class="header__menu menu">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a class="menu__link" href="#">
+								<a class="menu__link link" href="#">
 									Home
 								</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#about">
+								<a class="menu__link link" href="#about">
 									About us
 								</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">
+								<a class="menu__link link" href="#portfolio">
 									Portfolio
 								</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">
+								<a class="menu__link link" href="#">
 									Our team
 								</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">
+								<a class="menu__link link" href="#">
 									Blog
 								</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">
+								<a class="menu__link link" href="#">
 									Contact
 								</a>
 							</li>
@@ -215,12 +215,142 @@
 					</div>
 				</div>
 			</section>
+			<!-- MAGIC -->
+			<section class="magic">
+				<div class="container">
+					<div class="magic__image --ibg">
+						<img src="img/magic/cover.jpg" alt="Cover">
+					</div>
+					<div class="magic__body">
+						<h3 class="magic__title title">
+							Let's make magic.
+						</h3>
+						<div class="magic__descr">
+							<p class="magic__text">
+								Маркетинговое агентство MGN: полный комплекс маркетинговых, рекламных и дизайнерских услуг в
+								Харькове и Украине: маркетинговые исследования рынков, товаров, потребителей, планирование
+								комплекса маркетинга, реклама, проведение рекламных кампаний, брендинг, рекламный дизайн, pr.
+							</p>
+							<p class="magic__text">
+								Нами накоплен немалый опыт работы в реальном бизнесе, в самых различных отраслях – от
+								недвижимости до аптечного и медицинского бизнеса. Мы не просто беремся решать задачи наших
+								клиентов, мы сами вышли из бизнес-среды и понимаем суть бизнес-процессов.
+							</p>
+							<p class="magic__text">
+								Мы говорим с бизнесом на одном языке!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- PORTFOLIO -->
+			<section class="portfolio" id="portfolio">
+				<div class="container">
+					<div class="portfolio__top">
+						<h3 class="portfolio__title title">
+							Portfolio
+						</h3>
+						<div class="portfolio__filter-box">
+							<button type="button" class="portfolio__filter-btn link" data-filter="all">
+								All
+							</button>
+							<button type="button" class="portfolio__filter-btn link" role="button" data-filter=".category-a">
+								Branding
+							</button>
+							<button type="button" class="portfolio__filter-btn link" role="button" data-filter=".category-b">
+								Design
+							</button>
+							<button type="button" class="portfolio__filter-btn link" role="button" data-filter=".category-c">
+								Photography
+							</button>
+							<button type="button" class="portfolio__filter-btn link" role="button" data-filter=".category-d">
+								Illustration
+							</button>
+						</div>
+					</div>
+				</div>
+				<ul class="portfolio__grid portfolio-grid">
+					<li data-order="1" class="portfolio-grid__item  mix category-d">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-1.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="2" class="portfolio-grid__item  mix category-a">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-2.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="3" class="portfolio-grid__item  mix category-d category-a">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-3.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="4" class="portfolio-grid__item  mix category-b category-a">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-4.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="5" class="portfolio-grid__item  mix category-d">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-5.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="6" class="portfolio-grid__item  mix category-c">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-6.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="7" class="portfolio-grid__item  mix category-a">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-7.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="8" class="portfolio-grid__item  mix category-a">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-8.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+					<li data-order="9" class="portfolio-grid__item  mix category-c category-a">
+						<div class="portfolio-grid__image --ibg">
+							<img src="img/portfolio/image-9.jpg" alt="Image">
+						</div>
+						<div class="portfolio-grid__overlay">
+							<a class="portfolio-grid__link" href="#">Show project</a>
+						</div>
+					</li>
+				</ul>
+			</section>
 		</main>
-	</div>
-	<!-- SCRIPT -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/script.js"></script>
+		</div>
+		<!-- SCRIPT -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/mixitup.min.js"></script>
+		<script src="js/script.js"></script>
 </body>
 
 </html>

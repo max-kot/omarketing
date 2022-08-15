@@ -77,3 +77,5 @@ videoBtn.addEventListener('click', function () {
 	}
 
 })---*/
+
+var mixer = mixitup('.portfolio-grid');

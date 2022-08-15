@@ -104,3 +104,30 @@ body {
 		background: #fcbb08;
 	}
 }
+
+.link {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+	padding: 0 6px 9px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.6px;
+	color: #373a39;
+	border-bottom: 2px solid transparent;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	&:hover {
+		border-color: #fcbb08;
+		@media (max-width: 768px) {
+			border-color: transparent;
+			color: #fcbb08;
+		}
+	}
+	@media (max-width: 768px) {
+		font-size: 18px;
+	}
+}
