@@ -1,0 +1,133 @@
+/*--- Base Styles ---*/
+html,
+body {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 171%;
+	color: #373a39;
+	background: #fff;
+	@media (max-width: 480px) {
+		font-size: 1rem;
+	}
+}
+
+/*--- Utility ---*/
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	// делает элемент скрытым, но он по-прежнему на странице
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}
+.hidden {
+	opacity: 0;
+}
+
+/*--- Grid ---*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*--- Elements ---*/
+.no-scroll {
+	overflow: hidden;
+}
+.--ibg {
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.--vbg {
+	position: relative;
+	aspect-ratio: 16/9;
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 1.25;
+	letter-spacing: -1.65px;
+	color: #242121;
+	position: relative;
+	padding-bottom: 14px;
+	@media (max-width: 768px) {
+		font-size: 40px;
+	}
+	@media (max-width: 480px) {
+		font-size: 30px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60px;
+		height: 4px;
+		background: #fcbb08;
+	}
+}
+
+.link {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+	padding: 0 6px 9px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.6px;
+	color: #373a39;
+	border-bottom: 2px solid transparent;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	&:hover {
+		border-color: #fcbb08;
+		@media (max-width: 768px) {
+			border-color: transparent;
+			color: #fcbb08;
+		}
+	}
+	@media (max-width: 768px) {
+		font-size: 18px;
+	}
+}
