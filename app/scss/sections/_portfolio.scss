@@ -69,8 +69,15 @@
 		width: 100%;
 		padding: 42px 15px;
 		color: #242121;
+		transition: all 0.3s;
+
 		@media (max-width: 480px) {
 			padding: 30px 15px;
+		}
+
+		&:hover {
+			background: #242121;
+			color: #f6f8fa;
 		}
 	}
 

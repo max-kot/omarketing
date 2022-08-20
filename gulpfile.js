@@ -48,10 +48,10 @@ function styles() {
 // сжатие js
 function scripts() {
 	return src([
-		'node_modules/jquery/dist/jquery.js',//подключение jquery
+		//'node_modules/jquery/dist/jquery.js',//подключение jquery
 		'node_modules/mixitup/dist/mixitup.js',//подключение mix-it-up
-		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',//подключение fancybox
 		'node_modules/slick-carousel/slick/slick.js',//подключение slick
+		//'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',//подключение fancybox
 		'app/js/main.js'
 	])
 		.pipe(concat('main.min.js'))//объединям
@@ -96,6 +96,7 @@ function build() {
 		'app/css/style.min.css',
 		'app/js/main.min.js',
 		'app/fonts/**/*',
+		'app/lib/**/*',
 		'app/*.html',
 	], { base: 'app' })
 		.pipe(dest('dist'))

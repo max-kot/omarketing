@@ -1,5 +1,8 @@
-/*$(function () {
-	$('.gallery__slider').slick({
+$(function () {
+	Fancybox.bind("[data-fancybox]", {
+		// Your options go here
+	});
+	/*$('.gallery__slider').slick({
 		infinite: true,
 		speed: 800,
 		slidesPerRow: 3,
@@ -22,9 +25,9 @@
 				}
 			},
 		],
-	});
+	});*/
 
-})*/
+})
 
 
 /*---Menu---*/
