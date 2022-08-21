@@ -1,32 +1,10 @@
 $(function () {
-	Fancybox.bind("[data-fancybox]", {
-		// Your options go here
-	});
-	/*$('.gallery__slider').slick({
-		infinite: true,
+	$('.blog-slider').slick({
 		speed: 800,
-		slidesPerRow: 3,
-		rows: 2,
-		prevArrow: '<button type="button" class="slick-prev"><img src="img/gallery/prev.svg" alt="Previos"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="img/gallery/next.svg" alt="Next"></button>',
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					slidesPerRow: 2,
-					rows: 2,
-				}
-			},
-			{
-				breakpoint: 481,
-				settings: {
-					slidesPerRow: 1,
-					rows: 1,
-				}
-			},
-		],
-	});*/
-
+		dots: true,
+		prevArrow: '<button type="button" class="slick-prev"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M34.8297 18.6013H5.12463L19.3955 32.942L17.7539 34.5917L0.680359 17.4347L17.7562 0.27533L19.3979 1.925L5.12463 16.268H34.8297V18.6013Z" fill="#333333"/></svg></button>',
+		nextArrow: '<button type="button" class="slick-next"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M34.1494 17.4347L17.0735 34.594L15.4319 32.9443L29.7028 18.6037H0V16.2703H29.7051L15.4319 1.925L17.0735 0.27533L34.1494 17.4347Z" fill="#333333"/></svg></button>',
+	});
 })
 
 
