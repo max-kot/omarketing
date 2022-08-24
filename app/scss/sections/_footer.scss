@@ -1,0 +1,159 @@
+.footer {
+	&__top {
+		padding: 110px 0 60px;
+		background: #333333;
+		@media (max-width: 768px) {
+			padding: 50px 0;
+		}
+		@media (max-width: 480px) {
+			padding: 25px 0;
+		}
+	}
+
+	&__bottom {
+		background: #2a2c2b;
+		padding: 42px 0;
+		@media (max-width: 480px) {
+			padding: 25px 0;
+		}
+	}
+}
+.footer-top {
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__logo {
+		position: relative;
+		margin-bottom: 73px;
+		padding-bottom: 2px;
+		@media (max-width: 768px) {
+			margin-bottom: 50px;
+		}
+		@media (max-width: 480px) {
+			margin-bottom: 25px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 150px;
+			height: 4px;
+			background: #fcbb08;
+		}
+	}
+
+	&__social {
+	}
+
+	&__contact-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 57px;
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
+
+		& > * + * {
+			margin-top: 20px;
+		}
+	}
+
+	&__address {
+		margin-top: 65px;
+		font-family: "Open Sans", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+		color: #ffffff;
+		@media (max-width: 768px) {
+			margin-top: 25px;
+		}
+	}
+
+	&__phone {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+		color: #ffffff;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #fcbb08;
+		}
+	}
+
+	&__mail {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+		color: #ffffff;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #fcbb08;
+		}
+	}
+
+	&__link-up {
+		path {
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			path {
+				fill: #fcbb08;
+			}
+		}
+	}
+}
+.social {
+	&__list {
+		display: flex;
+		margin: -15px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item {
+		margin: 15px;
+	}
+
+	&__link {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 125%;
+		letter-spacing: 4px;
+		color: #ffffff;
+		text-transform: uppercase;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #fcbb08;
+		}
+	}
+}
+.footer-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__copy {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 133%;
+		text-align: center;
+		color: #cccccc;
+	}
+}
